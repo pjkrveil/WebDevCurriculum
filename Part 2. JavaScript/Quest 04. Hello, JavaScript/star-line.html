@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Star Line Printer
+    </title>
+
+    <!-- CSS style -->
+    <style type="text/css">
+      .star-line-printer {
+        text-align: center;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="star-line-printer">
+      <script type="text/javascript">
+        var line_num = prompt("How many lines do you want to draw?");
+
+        for (var line_drawn = 0; line_drawn <= line_num; line_drawn++)
+        {
+          for (var i = 0; i < line_drawn; i++)
+          {
+            document.write("*");
+          }
+          document.write("<br>");
+        };
+
+        alert("Printing star line is completed!");
+      </script>
+    </div>
+  </body>
+
+</html>
